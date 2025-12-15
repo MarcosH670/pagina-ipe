@@ -109,12 +109,6 @@
           <a class="btn ghost" href="#precio">Ver precios</a>
         </div>
       </div>
-      <div class="card">
-        <h3>Exterior de la caja</h3>
-        <p><strong>Forma y envoltorio:</strong> Caja rectangular con acabado premium, colores corporativos (azul y verde), textura mate con detalles brillantes. El diseño transmite innovación y confianza, genera curiosidad y deseo de abrirla.</p>
-        <p><strong>Nombre:</strong> DeliverTrust — transmite seguridad y transparencia.</p>
-        <p><strong>Propuesta de valor (parte posterior):</strong> “Centraliza tu logística en una sola app: seguimiento en tiempo real, atención multicanal y garantía de entrega. Reduce costes, mejora tu reputación y fideliza clientes.”</p>
-      </div>
     </div>
   </header>
 
@@ -135,21 +129,6 @@
             <li><strong>Esperado:</strong> atención al cliente + métricas.</li>
             <li><strong>Aumentado:</strong> garantía de entrega + analítica avanzada.</li>
           </ul>
-        </div>
-
-        <div class="card">
-          <h3>Marca, logo y eslogan</h3>
-          <ul>
-            <li><strong>Marca:</strong> DeliverTrust.</li>
-            <li><strong>Logo:</strong> candado abierto con una caja en el centro (confianza + logística).</li>
-            <li><strong>Eslogan:</strong> “Confianza y transparencia en cada entrega.”</li>
-            <li><strong>Colores corporativos:</strong> Azul (confianza), Verde (sostenibilidad), Blanco (claridad).</li>
-          </ul>
-          <div class="kv">
-            <span class="pill">Azul</span>
-            <span class="pill" style="background:#eafff5;border-color:#cdeedd;color:#0b6b4b">Verde</span>
-            <span class="pill" style="background:#ffffff;border-color:#e7eefc;color:#6b7b8b">Blanco</span>
-          </div>
         </div>
       </div>
     </section>
@@ -230,36 +209,6 @@
             <li><strong>Cómo:</strong> contenido digital + eventos presenciales.</li>
             <li><strong>Cuándo:</strong> lanzamiento en Q1, refuerzo en Q2 con ferias.</li>
           </ul>
-          <p><strong>Coste estimado:</strong> 15.000 € en marketing digital + 10.000 € en eventos.</p>
-        </div>
-        <div class="card">
-          <h3>Acceso por QR</h3>
-          <p>Puedes enlazar esta página mediante un código QR. Cuando la publiques, actualiza el enlace abajo.</p>
-          <div class="qr">
-            <a id="pageLink" class="btn ghost" href="#" target="_blank">Enlace de la página</a>
-            <img id="qrImage" src="" alt="Código QR" width="140" height="140" />
-          </div>
-          <p class="tagline">Consejo: personaliza el QR con los colores corporativos y añade el logo de DeliverTrust.</p>
-          <script>
-            // Sustituye esta URL por la URL pública tras publicar (GitHub Pages / Netlify / Vercel)
-            const PUBLIC_URL = "https://tu-dominio-o-gh-pages.example/delivertrust/";
-            const link = document.getElementById("pageLink");
-            const img  = document.getElementById("qrImage");
-
-            if (PUBLIC_URL && PUBLIC_URL.startsWith("http")) {
-              link.href = PUBLIC_URL;
-              link.textContent = PUBLIC_URL;
-              // Genera un QR usando la API de Chart de Google (rápida y gratuita)
-              const encoded = encodeURIComponent(PUBLIC_URL);
-              img.src = `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=${encoded}&choe=UTF-8`;
-              img.alt = "QR para " + PUBLIC_URL;
-            } else {
-              link.href = "#";
-              link.textContent = "Añade tu URL pública para generar QR";
-              img.src = "";
-              img.alt = "QR pendiente";
-            }
-          </script>
         </div>
       </div>
     </section>

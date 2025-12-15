@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeliverTrust — Confianza y transparencia en cada entrega</title>
+  <meta name="description" content="Centraliza tu logística en una sola app: seguimiento en tiempo real, atención multicanal y garantía de entrega." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#1463ff;   /* Azul (confianza) */
+      --green:#19a974;  /* Verde (sostenibilidad) */
+      --white:#ffffff;  /* Blanco (claridad) */
+      --bg:#0f172a;     /* Fondo elegante */
+      --text:#0b1b2b;   /* Texto principal */
+      --muted:#5b6b7b;  /* Texto secundario */
+      --card:#ffffff;
+      --shadow:0 10px 30px rgba(0,0,0,0.08);
+      --radius:14px;
+      --gap:18px;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#f6f9ff 0%,#eef4ff 40%,#ffffff 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif}
+    a{color:var(--blue);text-decoration:none}
+    header{
+      background: radial-gradient(1200px 500px at 15% 10%, rgba(20,99,255,0.09), transparent),
+                  radial-gradient(900px 400px at 85% 0%, rgba(25,169,116,0.10), transparent);
+      padding: 42px 22px 28px;
+      border-bottom: 1px solid #e7eefc;
+    }
+    .wrap{max-width:var(--max);margin:0 auto}
+    .hero{
+      display:grid;grid-template-columns:1.1fr 0.9fr;gap:30px;align-items:center
+    }
+    .logo{
+      display:flex;align-items:center;gap:14px;margin-bottom:14px
+    }
+    .lock{
+      width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--blue),#4fa2ff);box-shadow:var(--shadow)
+    }
+    .lock svg{width:26px;height:26px;fill:#fff}
+    h1{font-size:34px;line-height:1.1;margin:8px 0 10px}
+    .tagline{font-size:16px;color:var(--muted);max-width:680px}
+    .cta{
+      display:flex;gap:12px;margin-top:20px;flex-wrap:wrap
+    }
+    .btn{
+      padding:12px 18px;border-radius:12px;font-weight:600;border:1px solid transparent;transition:.2s
+    }
+    .primary{background:var(--blue);color:#fff}
+    .primary:hover{filter:brightness(1.07)}
+    .ghost{background:#fff;border-color:#dbe7ff;color:var(--blue)}
+    .ghost:hover{border-color:#bcd1ff}
+    .card{
+      background:var(--card);border:1px solid #e7eefc;border-radius:var(--radius);box-shadow:var(--shadow);
+      padding:20px
+    }
+    main{padding:28px 22px}
+    section{margin:26px 0}
+    h2{font-size:22px;margin:0 0 12px}
+    h3{font-size:17px;margin:20px 0 8px;color:#2b3a4a}
+    ul,ol{margin:10px 0 0 0;padding:0 0 0 18px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--gap)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+    .pill{display:inline-block;background:#eff6ff;border:1px solid #dbe7ff;color:#1a3d8f;padding:8px 12px;border-radius:999px;font-weight:600;margin:8px 8px 0 0}
+    .kv{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .price{
+      display:flex;flex-direction:column;gap:8px
+    }
+    .plan{border:1px solid #e7eefc;border-radius:12px;padding:16px}
+    .plan h4{margin:0 0 6px;font-size:16px}
+    .plan .amount{font-weight:700}
+    .badge{display:inline-block;background:linear-gradient(135deg,var(--green),#38c493);color:#fff;padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px}
+    .qr{
+      display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:8px
+    }
+    .qr img{border-radius:12px;border:1px solid #e7eefc}
+    footer{
+      padding:24px 22px;border-top:1px solid #e7eefc;color:var(--muted);font-size:13px
+    }
+    @media (max-width:960px){
+      .hero{grid-template-columns:1fr}
+      .grid,.grid-3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap hero">
+      <div>
+        <div class="logo">
+          <div class="lock" aria-hidden="true">
+            <!-- Logo: candado abierto con caja -->
+            <svg viewBox="0 0 24 24">
+              <path d="M12 1a5 5 0 00-5 5v3h2V6a3 3 0 116 0v3h2V6a5 5 0 00-5-5z"></path>
+              <path d="M5 10a2 2 0 00-2 2v7a2 2 0 002 2h14a2 2 0 002-2v-7a2 2 0 00-2-2H5zm5 3h4l3 2-5 3-5-3 3-2z"></path>
+            </svg>
+          </div>
+          <strong>DeliverTrust</strong>
+          <span class="badge">SaaS Logística</span>
+        </div>
+        <h1>Confianza y transparencia en cada entrega</h1>
+        <p class="tagline">Centraliza tu logística en una sola app: seguimiento en tiempo real, atención multicanal y garantía de entrega. Reduce costes, mejora tu reputación y fideliza clientes.</p>
+        <div class="cta">
+          <a class="btn primary" href="#producto">Ver producto</a>
+          <a class="btn ghost" href="#precio">Ver precios</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Exterior de la caja</h3>
+        <p><strong>Forma y envoltorio:</strong> Caja rectangular con acabado premium, colores corporativos (azul y verde), textura mate con detalles brillantes. El diseño transmite innovación y confianza, genera curiosidad y deseo de abrirla.</p>
+        <p><strong>Nombre:</strong> DeliverTrust — transmite seguridad y transparencia.</p>
+        <p><strong>Propuesta de valor (parte posterior):</strong> “Centraliza tu logística en una sola app: seguimiento en tiempo real, atención multicanal y garantía de entrega. Reduce costes, mejora tu reputación y fideliza clientes.”</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="producto">
+      <h2>Producto</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Prototipo</h3>
+          <ul>
+            <li><strong>Baja fidelidad:</strong> wireframes con login, dashboard de envíos, chat de atención y métricas.</li>
+            <li><strong>Alta fidelidad:</strong> interfaz con branding, iconos de tracking en tiempo real, panel de incidencias y analítica avanzada.</li>
+          </ul>
+
+          <h3>Niveles de producto</h3>
+          <ul>
+            <li><strong>Básico:</strong> seguimiento centralizado.</li>
+            <li><strong>Esperado:</strong> atención al cliente + métricas.</li>
+            <li><strong>Aumentado:</strong> garantía de entrega + analítica avanzada.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Marca, logo y eslogan</h3>
+          <ul>
+            <li><strong>Marca:</strong> DeliverTrust.</li>
+            <li><strong>Logo:</strong> candado abierto con una caja en el centro (confianza + logística).</li>
+            <li><strong>Eslogan:</strong> “Confianza y transparencia en cada entrega.”</li>
+            <li><strong>Colores corporativos:</strong> Azul (confianza), Verde (sostenibilidad), Blanco (claridad).</li>
+          </ul>
+          <div class="kv">
+            <span class="pill">Azul</span>
+            <span class="pill" style="background:#eafff5;border-color:#cdeedd;color:#0b6b4b">Verde</span>
+            <span class="pill" style="background:#ffffff;border-color:#e7eefc;color:#6b7b8b">Blanco</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="precio">
+      <h2>Precio</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Sistema de fijación</h3>
+          <ul>
+            <li><strong>Coste + margen:</strong> infraestructura SaaS y soporte.</li>
+            <li><strong>Demanda:</strong> crecimiento del e-commerce y saturación de call centers.</li>
+            <li><strong>Benchmarking:</strong> Outvio, Stuart, Amazon Logistics.</li>
+          </ul>
+        </div>
+        <div class="card price">
+          <h3>Planes</h3>
+          <div class="grid-3">
+            <div class="plan">
+              <h4>Básico</h4>
+              <div class="amount">29 €/mes</div>
+              <p>Seguimiento centralizado.</p>
+            </div>
+            <div class="plan">
+              <h4>Pro</h4>
+              <div class="amount">79 €/mes</div>
+              <p>Atención multicanal + métricas.</p>
+            </div>
+            <div class="plan">
+              <h4>Enterprise</h4>
+              <div class="amount">desde 249 €/mes</div>
+              <p>Garantía de entrega + analítica avanzada.</p>
+            </div>
+          </div>
+          <h3>Estrategias</h3>
+          <ul>
+            <li><strong>Penetración:</strong> precios accesibles para captar PYMEs y medianos e-commerce.</li>
+            <li><strong>Value-based pricing:</strong> justificar precio por ahorro en costes de atención y reducción de incidencias.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="distribucion">
+      <h2>Distribución</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Canales</h3>
+          <ul>
+            <li><strong>Directo (B2B):</strong> web corporativa, demos, contacto comercial.</li>
+            <li><strong>Partners logísticos:</strong> acuerdos con mensajerías.</li>
+            <li><strong>Marketplaces:</strong> AppSumo, Product Hunt, Google Workspace Marketplace.</li>
+            <li><strong>Intermediarios:</strong> agencias de integración, partners tecnológicos.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Operativa</h3>
+          <ul>
+            <li><strong>Activación:</strong> inmediata, alta digital en menos de 48h.</li>
+            <li><strong>Costes:</strong> mínimos — SaaS 100% digital, sin instalación física.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="comunicacion">
+      <h2>Comunicación</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Técnicas</h3>
+          <ul>
+            <li><strong>Contenido:</strong> casos de éxito, comparativas, vídeos explicativos.</li>
+            <li><strong>Campañas:</strong> LinkedIn y ferias sectoriales (eShow, SIL Barcelona).</li>
+          </ul>
+          <h3>Plan</h3>
+          <ul>
+            <li><strong>Qué:</strong> beneficios (reducción de costes, reputación, garantía).</li>
+            <li><strong>Cómo:</strong> contenido digital + eventos presenciales.</li>
+            <li><strong>Cuándo:</strong> lanzamiento en Q1, refuerzo en Q2 con ferias.</li>
+          </ul>
+          <p><strong>Coste estimado:</strong> 15.000 € en marketing digital + 10.000 € en eventos.</p>
+        </div>
+        <div class="card">
+          <h3>Acceso por QR</h3>
+          <p>Puedes enlazar esta página mediante un código QR. Cuando la publiques, actualiza el enlace abajo.</p>
+          <div class="qr">
+            <a id="pageLink" class="btn ghost" href="#" target="_blank">Enlace de la página</a>
+            <img id="qrImage" src="" alt="Código QR" width="140" height="140" />
+          </div>
+          <p class="tagline">Consejo: personaliza el QR con los colores corporativos y añade el logo de DeliverTrust.</p>
+          <script>
+            // Sustituye esta URL por la URL pública tras publicar (GitHub Pages / Netlify / Vercel)
+            const PUBLIC_URL = "https://tu-dominio-o-gh-pages.example/delivertrust/";
+            const link = document.getElementById("pageLink");
+            const img  = document.getElementById("qrImage");
+
+            if (PUBLIC_URL && PUBLIC_URL.startsWith("http")) {
+              link.href = PUBLIC_URL;
+              link.textContent = PUBLIC_URL;
+              // Genera un QR usando la API de Chart de Google (rápida y gratuita)
+              const encoded = encodeURIComponent(PUBLIC_URL);
+              img.src = `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=${encoded}&choe=UTF-8`;
+              img.alt = "QR para " + PUBLIC_URL;
+            } else {
+              link.href = "#";
+              link.textContent = "Añade tu URL pública para generar QR";
+              img.src = "";
+              img.alt = "QR pendiente";
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    © DeliverTrust — Confianza y transparencia en cada entrega
+  </footer>
+</body>
+</html>

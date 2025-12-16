@@ -6,24 +6,98 @@
   <title>DeliverTrust – Confianza y transparencia en cada entrega</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {font-family:'Inter',sans-serif;margin:0;background:#f9fbfd;color:#1a1a1a;}
-    header {background:linear-gradient(135deg,#1463ff,#19a974);color:white;padding:60px 20px;text-align:center;}
-    header h1 {margin:0;font-size:2.8em;}
-    header p {font-size:1.2em;margin-top:10px;}
+    body {
+      font-family:'Inter',sans-serif;
+      margin:0;
+      background:#ffffff;
+      color:#1a1a1a;
+    }
+    header {
+      background:linear-gradient(135deg,#1463ff,#19a974);
+      color:white;
+      padding:80px 20px;
+      text-align:center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {margin:0;font-size:3em;animation: slideDown 1.5s ease;}
+    header p {font-size:1.3em;margin-top:10px;animation: fadeIn 2.5s ease;}
     nav {margin-top:20px;}
-    nav a {color:white;margin:0 10px;text-decoration:none;font-weight:600;}
-    section {max-width:1000px;margin:40px auto;padding:20px;}
-    section h2 {color:#1463ff;margin-top:0;}
-    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-    .card {background:white;border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(0,0,0,0.08);}
-    .plan {border:1px solid #e0e0e0;border-radius:10px;padding:15px;text-align:center;}
+    nav a {
+      color:white;
+      margin:0 12px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+    nav a:hover {color:#ffeb3b;}
+    section {
+      max-width:1000px;
+      margin:40px auto;
+      padding:20px;
+    }
+    section h2 {
+      color:#1463ff;
+      margin-top:0;
+      position:relative;
+    }
+    section h2::after {
+      content:"";
+      display:block;
+      width:60px;
+      height:4px;
+      background:#19a974;
+      margin-top:8px;
+      border-radius:2px;
+      animation: growBar 1.5s ease forwards;
+    }
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+    .card {
+      background:#f9fbfd;
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow:0 12px 25px rgba(0,0,0,0.12);
+    }
+    .plan {
+      border:2px solid #1463ff;
+      border-radius:10px;
+      padding:20px;
+      text-align:center;
+      background:#fff;
+      transition: transform 0.3s ease;
+    }
+    .plan:hover {transform: scale(1.05);}
     .plan h3 {margin:0;color:#19a974;}
-    .plan p {margin:5px 0;}
     .cta {text-align:center;margin:40px 0;}
-    .cta a {background:#1463ff;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;}
-    .qr {text-align:center;margin-top:20px;}
-    .qr img {border:1px solid #ccc;border-radius:10px;padding:10px;}
-    footer {text-align:center;padding:20px;background:#f0f4f8;font-size:0.9em;color:#555;}
+    .cta a {
+      background:#1463ff;
+      color:white;
+      padding:14px 24px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition: background 0.3s ease;
+    }
+    .cta a:hover {background:#0d47a1;}
+    footer {
+      text-align:center;
+      padding:20px;
+      background:#1463ff;
+      color:white;
+      font-size:0.9em;
+    }
+    /* Animations */
+    @keyframes fadeIn {from{opacity:0;}to{opacity:1;}}
+    @keyframes slideDown {from{transform:translateY(-30px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+    @keyframes growBar {from{width:0;}to{width:60px;}}
   </style>
 </head>
 <body>
